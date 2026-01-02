@@ -2,6 +2,8 @@
 
 A simple, lightweight project scaffolding tool built with Python, Typer, and Rich. `authskaf` helps you jumpstart your projects by generating boilerplate from customizable templates.
 
+Originally designed for specialized authentication-related scaffolding, `authskaf` currently provides a set of basic templates. The long-term vision is to expand this into a comprehensive library supporting all major authentication types and patterns out of the box.
+
 ## ✨ Features
 
 - **Template-based:** Create new projects from predefined or custom templates.
