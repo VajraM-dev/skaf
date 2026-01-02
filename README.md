@@ -1,6 +1,6 @@
-# skaf 🚀
+# authskaf 🚀
 
-A simple, lightweight project scaffolding tool built with Python, Typer, and Rich. `skaf` helps you jumpstart your projects by generating boilerplate from customizable templates.
+A simple, lightweight project scaffolding tool built with Python, Typer, and Rich. `authskaf` helps you jumpstart your projects by generating boilerplate from customizable templates.
 
 ## ✨ Features
 
@@ -14,16 +14,16 @@ A simple, lightweight project scaffolding tool built with Python, Typer, and Ric
 
 ## 🚀 Installation
 
-The easiest way to install `skaf` is using [uv](https://github.com/astral-sh/uv):
+The easiest way to install `authskaf` is using [uv](https://github.com/astral-sh/uv):
 
 ```bash
-uv tool install skaf
+uv tool install authskaf
 ```
 
 Alternatively, you can install it via pip:
 
 ```bash
-pip install skaf
+pip install authskaf
 ```
 
 ## 🛠️ Usage
@@ -31,32 +31,32 @@ pip install skaf
 ### 1. List Available Templates
 See all templates currently installed on your system.
 ```bash
-skaf list
+authskaf list
 ```
 
 ### 2. Get Template Details
 View a template's description, required variables, and custom metadata.
 ```bash
-skaf info <template_name>
+authskaf info <template_name>
 ```
 
 ### 3. Initialize a New Project
-Create a new project from a template. `skaf` will guide you through the configuration.
+Create a new project from a template. `authskaf` will guide you through the configuration.
 ```bash
-skaf init <template_name> <output_directory>
+authskaf init <template_name> <output_directory>
 ```
 
 **Example:**
 ```bash
-skaf init python-web ./my-api --python 3.12
+authskaf init python-web ./my-api --python 3.12
 ```
 
 ## 📂 Template Locations
 
-`skaf` looks for templates in the following platform-specific directories:
+`authskaf` looks for templates in the following platform-specific directories:
 
-- **Windows:** `%APPDATA%\skaf\templates\`
-- **Linux/macOS:** `~/.config/skaf/templates/`
+- **Windows:** `%APPDATA%\authskaf\templates\`
+- **Linux/macOS:** `~/.config/authskaf/templates/`
 
 Each template should be a folder containing:
 1.  `template.toml`: (Optional) Manifest file for metadata.
@@ -74,7 +74,7 @@ description = "A starter for high-performance APIs"
 author = "Your Name"
 version = "1.0.0"
 
-# You can also pre-define variables (optional, skaf auto-detects them too)
+# You can also pre-define variables (optional, authskaf auto-detects them too)
 variables = ["project_name", "db_type"]
 ```
 

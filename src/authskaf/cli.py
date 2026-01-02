@@ -3,12 +3,12 @@ from pathlib import Path
 from typing import Optional
 from rich.console import Console
 from rich.table import Table
-from skaf.config import get_templates_directories, GLOBAL_TEMPLATES_DIR
-from skaf.templates import list_templates
-from skaf.init import initialize_project
+from authskaf.config import get_templates_directories, GLOBAL_TEMPLATES_DIR
+from authskaf.templates import list_templates
+from authskaf.init import initialize_project
 
 app = typer.Typer(
-    help="skaf: A simple project scaffolding tool",
+    help="authskaf: A simple project scaffolding tool",
     no_args_is_help=True,
     add_completion=False
 )
@@ -36,7 +36,7 @@ def list():
         )
     
     console.print(table)
-    console.print("\n[bold blue]Next Step:[/bold blue] Run `skaf init <name> <path>` to start a project.")
+    console.print("\n[bold blue]Next Step:[/bold blue] Run `authskaf init <name> <path>` to start a project.")
 
 @app.command()
 def info(template_name: str):
