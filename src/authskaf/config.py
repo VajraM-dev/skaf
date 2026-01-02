@@ -4,15 +4,15 @@ import os
 import sys
 import shutil
 
-APP_NAME = "skaf"
+APP_NAME = "authskaf"
 
 def get_config_dir() -> Path:
     if sys.platform == "win32":
-        # Windows: %APPDATA%\skaf
+        # Windows: %APPDATA%\authskaf
         base = Path(os.environ.get("APPDATA", Path.home() / "AppData" / "Roaming"))
         return base / APP_NAME
     else:
-        # Linux/macOS: ~/.config/skaf
+        # Linux/macOS: ~/.config/authskaf
         return Path.home() / ".config" / APP_NAME
 
 CONFIG_DIR = get_config_dir()

@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 from typing import Dict, Optional
 from rich.console import Console
-from skaf.templates import Template
+from authskaf.templates import Template
 
 console = Console()
 
