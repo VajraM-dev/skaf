@@ -1,0 +1,3 @@
+name = "basic-api"
+description = "A basic FastAPI project template"
+variables = ["project_name", "version"]
